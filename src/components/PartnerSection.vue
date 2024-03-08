@@ -1,7 +1,7 @@
 <template>
   <div id="partner">
-    <section class="partner max-w-6xl mx-auto py-12">
-      <div class="flex flex-row gap-x-12 items-center justify-center">
+    <section class="partner max-w-6xl md:mx-4 lg:mx-auto py-12">
+      <div class="flex sm:flex-col md:flex-row sm:gap-y-12 md:gap-x-12 items-center justify-center">
         <svg
           width="142"
           height="34"

@@ -3,6 +3,9 @@
   <HeroSection/>
   <PartnerSection/>
   <FeatureSection/>
+  <BenefitSection/>
+  <ShowcaseSection/>
+  <FaqSection/>
   <ClosingSection/>
   <FooterSection/>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
@@ -14,6 +17,9 @@ import NavBar from './components/NavBar.vue'
 import HeroSection from './components/HeroSection.vue'
 import PartnerSection from './components/PartnerSection.vue'
 import FeatureSection from './components/FeatureSection.vue'
+import BenefitSection from './components/BenefitSection.vue'
+import ShowcaseSection from './components/ShowcaseSection.vue'
+import FaqSection from './components/FaqSection.vue'
 import ClosingSection from './components/ClosingSection.vue'
 import FooterSection from './components/FooterSection.vue'
 
@@ -24,6 +30,9 @@ export default {
     HeroSection,
     PartnerSection,
     FeatureSection,
+    BenefitSection,
+    ShowcaseSection,
+    FaqSection,
     ClosingSection,
     FooterSection,
   }

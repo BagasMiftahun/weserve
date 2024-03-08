@@ -140,7 +140,7 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-row items-center">
+        <div class="flex flex-row items-center mt-5 lg:mt-0">
           <img src="../assets/ilustration_header.png" class="h-[550px]" alt="" />
         </div>
       </div>

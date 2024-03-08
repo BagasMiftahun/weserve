@@ -1,7 +1,7 @@
 <template>
-  <div id="navbar">
+  <div id="navbar" class="mt-10 pb-12">
     <nav
-      class="flex flex-row max-w-6xl mx-auto justify-between items-center mt-10 pb-12"
+      class="flex flex-row max-w-6xl justify-between items-center sm:mx-4 lg:mx-auto"
     >
       <svg
         width="176"
@@ -60,7 +60,7 @@
         />
       </svg>
 
-      <ul class="flex flex-row gap-x-7">
+      <ul class="hidden lg:flex flex-row gap-x-7 lg:mt-0">
         <li>
           <a
             href=""
@@ -98,7 +98,7 @@
         </li>
       </ul>
 
-      <div class="flex flex-row items-center gap-x-3">
+      <div class="hidden lg:flex flex-row items-center gap-x-3">
         <div class="bg-white rounded-full p-3 flex items-center">
           <a href="">
             <svg
@@ -148,17 +148,91 @@
           >Sign in</a
         >
       </div>
+
+      <!-- Small screen -->
+      <!-- Button for small screens -->
+      <button
+        id="navToggle"
+        class="lg:hidden text-indigo-950 hover:text-violet-700" @click="toggleDiv"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
     </nav>
+    <!-- nav small screen -->
+    <div id="navbarDropdown" :class="{ 'hidden': !isVisible }" class="w-full bg-white lg:hidden">
+        <ul class="flex flex-col items-center justify-center gap-y-5 my-2">
+          <li class="mt-1">
+            <a
+              href=""
+              class="text-base text-indigo-950 border-b border-gray-300 hover:font-semibold hover:text-violet-700"
+              >Products</a
+            >
+          </li>
+          <li class="mt-1">
+            <a
+              href=""
+              class="text-base text-indigo-950 border-b border-gray-300 hover:font-semibold hover:text-violet-700"
+              >Services</a
+            >
+          </li>
+          <li class="mt-1">
+            <a
+              href=""
+              class="text-base text-indigo-950 border-b border-gray-300 hover:font-semibold hover:text-violet-700"
+              >Pricing</a
+            >
+          </li>
+          <li class="mt-1">
+            <a
+              href=""
+              class="text-base text-indigo-950 border-b border-gray-300 hover:font-semibold hover:text-violet-700"
+              >Testimonials</a
+            >
+          </li>
+          <li class="mt-1">
+            <a
+              href=""
+              class="text-base text-indigo-950 border-b border-gray-300 hover:font-semibold hover:text-violet-700"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NavBar'
-}
+  name: "NavBar",
+  data() {
+    return {
+      isVisible: false
+    };
+  },
+  methods: {
+    toggleDiv() {
+      this.isVisible = !this.isVisible;
+    }
+  }
+};
+
+
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
 
-</style>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped></style>

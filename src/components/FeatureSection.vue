@@ -1,12 +1,12 @@
 <template>
   <div id="feature">
-    <section class="feature max-w-6xl mx-auto py-20">
+    <section class="feature max-w-6xl sm:mx-4 lg:mx-auto py-20">
       <h3
         class="font-clash_display font-semibold text-5xl text-indigo-950 text-center mb-8"
       >
         Your Best Choice
       </h3>
-      <div class="grid grid-cols-4 gap-x-8">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-x-8 gap-y-8">
         <div
           class="my-card bg-white rounded-2xl px-5 py-8 flex flex-col gap-y-8"
         >
